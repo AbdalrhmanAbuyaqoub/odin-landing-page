@@ -10,9 +10,7 @@ body {
 .logo {
   font-size: 24px;
   color: #f9faf8;
-  font-weight: 600;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 800;
 }
 
 ul {
@@ -30,18 +28,18 @@ a {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #1f2937;
   color: white;
   align-items: center;
-  padding: 16px;
+  padding: 16px 200px;
+  gap: 420px;
 }
 
 .title {
   font-size: 48px;
   font-weight: bolder;
   color: #f9faf8;
-  width: 400px;
 }
 .subtext,
 a {
@@ -52,28 +50,31 @@ a {
   display: flex;
   background-color: #1f2937;
   color: white;
-  justify-content: space-around;
-  padding: 80px 165px;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 120px 200px;
 }
 
 .left-side {
-  width: 530px;
+  flex-basis: 450px;
 }
 
 #hero-image {
   height: 230px;
   width: 500px;
+  background-color: gray;
 }
 
 button {
   background-color: #3882f6;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 0;
-  padding: 6px 34px;
+  padding: 10px 36px;
   margin-top: 8px;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 #info-title {
@@ -108,32 +109,38 @@ button {
 .quote {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #e5e7eb;
   font-size: 36px;
   font-weight: 100;
   font-style: italic;
   color: #1f2937;
   text-align: center;
-  padding: 80px 350px;
+  padding: 120px 200px;
+}
+.quote .text {
+  max-width: 800px;
 }
 span {
   font-size: 24px;
   font-weight: bold;
   font-style: normal;
-  align-self: flex-end;
   padding-top: 12px;
+  text-align: right;
+  padding-left: 580px;
 }
 
 .sign-up-banner {
   color: #e5e7eb;
-  display: flex;
   background-color: #3882f6;
-  justify-content: space-around;
+  border-radius: 10px;
+  margin: 80px auto;
+  padding: 50px 160px;
+  width: 750px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 200px;
-  padding: 30px 160px;
-  border-radius: 5px;
-  margin: 80px 300px;
 }
 
 .sign-up-banner button {
@@ -141,15 +148,14 @@ span {
 }
 
 #action-title {
-    display: block;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 600;
   color: white;
 }
 
-.footer{
-    background-color: #1f2937;
-    color: #e5e7eb;
-    text-align: center;
-    padding: 40px;
-
+.footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 40px;
 }
